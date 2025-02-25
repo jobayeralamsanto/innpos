@@ -1,0 +1,170 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+.bg-hero {
+  background-image: linear-gradient(40deg, rgb(56 78 155) 0%, rgb(53 191 185) 100%);
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+.bg-erp {
+  background: linear-gradient(180deg, #ffffff 0%, #f1a1363d 100%);
+}
+.bg_shape {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+  top: 0px;
+  height: 100%;
+  width: 100%;
+}
+.bg-industry {
+  background-image: url(../img/0x0.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.industry-icon {
+  color: #ffffff;
+  filter: brightness(0) invert(1);
+}
+.bg-features {
+  background-image: url(../img/features.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.overlay1 {
+  background-color: #020202bf;
+}
+.overlay-2 {
+  background-color: #3a3a3abf;
+}
+.hover-effect-1 {
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+.hover-effect-1:hover {
+  transform: translateY(-0.4rem);
+  transition: all 0.3s ease;
+  background-image: linear-gradient(40deg, #b0ffb6 0.4%, #fff5e2 100.2%);
+}
+.cta-card__btn {
+  padding: 14px 46px;
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  border: 2px solid rgba(243, 248, 254, 0.3);
+  border-radius: 10rem;
+  font-size: 18px;
+  font-family: "Mulish", sans-serif;
+  color: #fff;
+  background-color: rgba(243, 248, 254, 0.4);
+}
+.cta-card {
+  width: 100%;
+  background-color: #1d2e9e;
+  background-image: linear-gradient(rgb(158 29 52 / 1%), rgba(20, 41, 66, 0.8)), url(../img/cta_bg.png);
+  background-position: 0 0, 50% 0;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  border-radius: 16px;
+  padding: 40px;
+  text-align: center;
+  color: #fff;
+
+  z-index: 1;
+  position: relative;
+}
+.elementor-element {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #ffffff 0%, #dfe8fc 100%);
+  border-radius: 16px 16px 16px 16px;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #dfe8fc;
+}
+.elementor-element-1 {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #ffffff 0%, #2f98ea29 100%);
+  border-radius: 16px 16px 16px 16px;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #dfe8fc;
+}
+
+@media (max-width: 767px) {
+  .elementor-background-overlay {
+    background-image: url(../img/Digital-Product-Track-BG.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    padding: 30px 25px 30px 25px;
+    height: 100%;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .elementor-background-overlay {
+    background-image: url(../img/Digital-Product-Track-BG.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    padding: 64px 64px 64px 64px;
+    height: 100%;
+    width: 100%;
+  }
+}
+.accordion-flush .accordion-item {
+  border-radius: 20px;
+  background: #ffffff;
+}
+.accordion-flush .accordion-item .accordion-button {
+  border-radius: 20px;
+  font-weight: 600;
+  width: 100%;
+  text-align: start;
+  padding: 25px 65px 25px 25px;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 0;
+  font-size: 18px;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-radius: 20px;
+}
+.accordion-button:not(.collapsed) {
+  color: #242331;
+  /* background-color: #ffffff; */
+  box-shadow: none;
+  padding-left: 20px;
+}
+.accordion-button::after {
+  margin-left: auto;
+  background-color: #44c642;
+  padding: 20px 20px;
+  content: "";
+  right: 33px;
+  position: absolute;
+  background-image: url(../img/faq.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0.4rem;
+  transition: transform 0.2s ease-in-out;
+  border-radius: 20px;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../img/faq-not.png);
+  transform: rotate(1deg);
+  background-size: 0.7rem;
+}
