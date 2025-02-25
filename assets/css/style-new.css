@@ -10,6 +10,21 @@ body {
   display: flex;
   align-items: center;
 }
+.bg-about {
+  background: linear-gradient(180deg, #ffffff 0%, #d8ffd8 100%);
+}
+.wrapper.bg-about.angled.lower-start:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 400px 1920px;
+  border-color: transparent transparent #ffffff transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
 .bg-erp {
   background: linear-gradient(180deg, #ffffff 0%, #f1a1363d 100%);
 }
@@ -69,7 +84,7 @@ body {
 }
 .cta-card {
   width: 100%;
-  background-color: #1d2e9e;
+  background-color: #3f3f3f;
   background-image: linear-gradient(rgb(158 29 52 / 1%), rgba(20, 41, 66, 0.8)), url(../img/cta_bg.png);
   background-position: 0 0, 50% 0;
   background-repeat: repeat, no-repeat;
