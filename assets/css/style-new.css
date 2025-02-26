@@ -1,15 +1,7 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-.bg-hero {
-  background-image: linear-gradient(40deg, rgb(56 78 155) 0%, rgb(53 191 185) 100%);
-  background-size: cover;
-  background-position: 50%;
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-}
+
 .bg-about {
   background: linear-gradient(180deg, #ffffff 0%, #d8ffd8 100%);
 }
@@ -25,36 +17,7 @@ body {
   right: 0;
   z-index: 0;
 }
-.bg-erp {
-  background: linear-gradient(180deg, #ffffff 0%, #f1a1363d 100%);
-}
-.bg_shape {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
 
-  top: 0px;
-  height: 100%;
-  width: 100%;
-}
-.bg-industry {
-  background-image: url(../img/0x0.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.industry-icon {
-  color: #ffffff;
-  filter: brightness(0) invert(1);
-}
-.bg-features {
-  background-image: url(../img/features.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 .overlay1 {
   background-color: #020202bf;
 }
@@ -93,7 +56,6 @@ body {
   padding: 40px;
   text-align: center;
   color: #fff;
-
   z-index: 1;
   position: relative;
 }
@@ -160,7 +122,6 @@ body {
 }
 .accordion-button:not(.collapsed) {
   color: #242331;
-  /* background-color: #ffffff; */
   box-shadow: none;
   padding-left: 20px;
 }

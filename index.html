@@ -6,12 +6,12 @@
     <title>INNPOS Innovative Point of Sale</title>
     <meta property="og:title" content="INNPOS Innovative Point of Sale" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" itemprop="image" content="./assets/img/devices.png" />
-    <meta property="og:image:secure_url" content="./assets/img/devices.png" />
+    <meta property="og:image" itemprop="image" content="./assets/img/home-page/INNOVATIVE-POS.png" />
+    <meta property="og:image:secure_url" content="./assets/img/home-page/INNOVATIVE-POS.png" />
     <meta property="og:image:width" content="1280" />
     <meta property="og:image:height" content="640" />
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:image" content="./assets/img/devices.png" />
+    <meta property="twitter:image" content="./assets/img/home-page/INNOVATIVE-POS.png" />
 
     <link rel="shortcut icon" href="./assets/img/FAV.png" />
     <link rel="stylesheet" href="./assets/css/plugins.css" />
@@ -27,7 +27,7 @@
         <div class="container flex-lg-row flex-nowrap align-items-center py-2 py-lg-0">
           <div class="navbar-brand w-100">
             <a href="./index.html">
-              <img class="h-11" src="./assets/img/logo-black.png" alt="" />
+              <img src="./assets/img/logo-black.png" alt="" />
             </a>
           </div>
           <div class="navbar-collapse offcanvas-nav">
@@ -80,7 +80,7 @@
               <p class="lead fs-lg mb-7 px-md-10 px-lg-0">Your trusted partner for reliable and efficient POS solutions, empowering businesses with seamless transactions.</p>
               <div class="d-flex justify-content-center justify-content-lg-start" data-cues="slideInDown" data-group="page-title-buttons" data-delay="900">
                 <span>
-                  <a href="https://play.google.com/store/apps/details?id=com.bdtask.retailserpos.reatiler_pos&pli=1" class="btn btn-primary btn-icon btn-icon-start rounded me-2"> <i class="uil uil-google-play"></i> Download Our App</a>
+                  <button onclick="downloadAPK()" class="btn btn-primary btn-icon btn-icon-start rounded me-2"><i class="uil uil-google-play"></i> Download Our App</button>
                 </span>
               </div>
             </div>
@@ -541,7 +541,7 @@
             <div class="widget">
               <h4 class="widget-title text-white mb-3">Links</h4>
               <ul class="list-unstyled text-reset mb-0">
-                <li><a href="#">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="privacy-policy.html">Privacy Policy</a></li>
                 <li><a href="refund-returns.html">Returns Policy</a></li>
                 <li><a href="#">Terms of Use</a></li>
@@ -591,5 +591,18 @@
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/theme.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script>
+      function downloadAPK() {
+        const apkUrl = "./assets/apk/app-innpos-v-33.apk";
+
+        // Create an anchor element
+        const a = document.createElement("a");
+        a.href = apkUrl;
+        a.download = "./assets/apk/app-innpos-v-33.apk";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      }
+    </script>
   </body>
 </html>
