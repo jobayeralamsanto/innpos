@@ -46,14 +46,8 @@
           <!-- /.navbar-collapse -->
           <div class="navbar-other w-100 d-flex ms-auto">
             <ul class="navbar-nav flex-row align-items-center ms-auto" data-sm-skip="true">
-              <li class="nav-item d-none d-md-block">
-                <a href="./contact.html" class="btn hover-effect-2 btn-sm d-flex align-items-center gap-1">
-                  <i class="uil uil-user"></i>
-                  Sign in</a
-                >
-              </li>
-              <li class="nav-item d-none d-md-block">
-                <a href="./contact.html" class="btn btn-sm btn-primary rounded-pill">Sign up</a>
+              <li class="nav-item">
+                <button onclick="downloadAPK()" class="btn btn-primary btn-icon btn-icon-start rounded py-1 px-3"><i class="uil uil-android"></i> <span class="d-none d-md-inline-block">Download App</span></button>
               </li>
               <li class="nav-item d-lg-none">
                 <div class="navbar-hamburger">
@@ -344,18 +338,19 @@
             <div class="col-md-6 col-lg-4">
               <div class="pricing card lift h-100 text-center">
                 <div class="card-body position-relative">
-                  <img src="./assets/img/home-page/Our-Pricing/Starter-Plan.png" class="mb-3" alt="" />
-                  <h4 class="card-title">Starter Plan</h4>
+                  <img src="./assets/img/home-page/Our-Pricing/Starter-Plan.png" class="svg-inject icon-svg icon-svg-md text-primary mb-3" alt="" />
+                  <h4 class="card-title">Basic</h4>
                   <div class="prices text-dark">
-                    <div class="price price-show"><span class="price-currency">$</span><span class="price-value">9</span> <span class="price-duration">month</span></div>
-                    <div class="price price-hide price-hidden"><span class="price-currency">$</span><span class="price-value">5</span> <span class="price-duration">year</span></div>
+                    <div class="price price-show"><span class="price-currency">$</span><span class="price-value">5</span> <span class="price-duration">month</span></div>
+                    <div class="price price-hide price-hidden"><span class="price-currency">$</span><span class="price-value">50</span> <span class="price-duration">year</span></div>
                   </div>
                   <!--/.prices -->
                   <ul class="icon-list bullet-bg bullet-soft-primary mt-8 mb-9 text-start">
-                    <li><i class="uil uil-check"></i><span>Basic POS system with essential features</span></li>
-                    <li><i class="uil uil-check"></i><span>Supports cash and card payments </span></li>
-                    <li><i class="uil uil-check"></i><span>Inventory tracking & sales reports </span></li>
-                    <li><i class="uil uil-check"></i><span>24/7 customer support </span></li>
+                    <li><i class="uil uil-check"></i><span>150 Invoices</span></li>
+                    <li><i class="uil uil-check"></i><span>Dashboard </span></li>
+                    <li><i class="uil uil-check"></i><span>Business Suite</span></li>
+                    <li><i class="uil uil-check"></i><span>Tap & Pay </span></li>
+                    <li><i class="uil uil-check"></i><span>Payment Links </span></li>
                   </ul>
                   <a href="#" class="btn btn-primary rounded-pill" style="position: absolute; bottom: 30px; left: 0; right: 0; width: max-content; margin: auto">Choose Plan</a>
                 </div>
@@ -367,18 +362,19 @@
             <div class="col-md-6 col-lg-4 popular">
               <div class="pricing card lift h-100 text-center">
                 <div class="card-body position-relative">
-                  <img src="./assets/img/home-page/Our-Pricing/Business-Plan.png" class="mb-3" alt="" />
-                  <h4 class="card-title">Business Plan</h4>
+                  <img src="./assets/img/home-page/Our-Pricing/Business-Plan.png" class="svg-inject icon-svg icon-svg-md text-primary mb-3" alt="" />
+                  <h4 class="card-title">Standard</h4>
                   <div class="prices text-dark">
-                    <div class="price price-show"><span class="price-currency">$</span><span class="price-value">15</span> <span class="price-duration">month</span></div>
-                    <div class="price price-hide price-hidden"><span class="price-currency">$</span><span class="price-value">12</span> <span class="price-duration">year</span></div>
+                    <div class="price price-show"><span class="price-currency">$</span><span class="price-value">19</span> <span class="price-duration">month</span></div>
+                    <div class="price price-hide price-hidden"><span class="price-currency">$</span><span class="price-value">150</span> <span class="price-duration">year</span></div>
                   </div>
                   <!--/.prices -->
                   <ul class="icon-list bullet-bg bullet-soft-primary mt-8 mb-9 text-start">
-                    <li><i class="uil uil-check"></i><span>All Starter features + multi-location support </span></li>
-                    <li><i class="uil uil-check"></i><span>Advanced inventory & sales analytics </span></li>
-                    <li><i class="uil uil-check"></i><span>E-commerce & mobile payment integration </span></li>
-                    <li><i class="uil uil-check"></i><span>Custom branding options</span></li>
+                    <li><i class="uil uil-check"></i><span>350 Invoices</span></li>
+                    <li><i class="uil uil-check"></i><span>Dashboard </span></li>
+                    <li><i class="uil uil-check"></i><span>Business Suite</span></li>
+                    <li><i class="uil uil-check"></i><span>Tap & Pay </span></li>
+                    <li><i class="uil uil-check"></i><span>Payment Links </span></li>
                   </ul>
                   <a href="#" class="btn btn-primary rounded-pill" style="position: absolute; bottom: 30px; left: 0; right: 0; width: max-content; margin: auto">Choose Plan</a>
                 </div>
@@ -390,19 +386,19 @@
             <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-0">
               <div class="pricing card lift h-100 text-center">
                 <div class="card-body position-relative">
-                  <img src="./assets/img/home-page/Our-Pricing/Enterprise-Plan.png" class="mb-3" alt="" />
-                  <h4 class="card-title">Enterprise Plan</h4>
+                  <img src="./assets/img/home-page/Our-Pricing/Enterprise-Plan.png" class="svg-inject icon-svg icon-svg-md text-primary mb-3" alt="" />
+                  <h4 class="card-title">Pro</h4>
                   <div class="prices text-dark">
-                    <div class="price price-show"><span class="price-currency">$</span><span class="price-value">45</span> <span class="price-duration">month</span></div>
-                    <div class="price price-hide price-hidden"><span class="price-currency">$</span><span class="price-value">29</span> <span class="price-duration">year</span></div>
+                    <div class="price price-show"><span class="price-currency">$</span><span class="price-value">39</span> <span class="price-duration">month</span></div>
+                    <div class="price price-hide price-hidden"><span class="price-currency">$</span><span class="price-value">250</span> <span class="price-duration">year</span></div>
                   </div>
                   <!--/.prices -->
                   <ul class="icon-list bullet-bg bullet-soft-primary mt-8 mb-9 text-start">
-                    <li><i class="uil uil-check"></i><span> All Starter features + Business Plan </span></li>
-                    <li><i class="uil uil-check"></i><span>Advanced inventory & sales analytics </span></li>
-                    <li><i class="uil uil-check"></i><span> E-commerce & mobile payment integration </span></li>
-                    <li><i class="uil uil-check"></i><span> Custom branding options</span></li>
-                    <li><i class="uil uil-check"></i><span> Physical and Virtual ATM Cards</span></li>
+                    <li><i class="uil uil-check"></i><span>1000 Invoices</span></li>
+                    <li><i class="uil uil-check"></i><span>Dashboard </span></li>
+                    <li><i class="uil uil-check"></i><span>Business Suite</span></li>
+                    <li><i class="uil uil-check"></i><span>Tap & Pay </span></li>
+                    <li><i class="uil uil-check"></i><span>Payment Links </span></li>
                   </ul>
                   <a href="#" class="btn btn-primary rounded-pill" style="position: absolute; bottom: 30px; left: 0; right: 0; width: max-content; margin: auto">Choose Plan</a>
                 </div>
@@ -674,18 +670,6 @@
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/theme.js"></script>
     <script src="./assets/js/script.js"></script>
-    <script>
-      function downloadAPK() {
-        const apkUrl = "./assets/apk/innpos_version_1.0.7.apk";
-
-        // Create an anchor element
-        const a = document.createElement("a");
-        a.href = apkUrl;
-        a.download = "./assets/apk/innpos_version_1.0.7.apk";
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-      }
-    </script>
+    <script></script>
   </body>
 </html>
