@@ -39,12 +39,12 @@ $(document).ready(function () {
 // ======= apk dwonload finction =======
 
 function downloadAPK() {
-  const apkUrl = "./assets/apk/innpos-version-1.0.10.apk";
+  const apkUrl = "./assets/apk/innpos_version_1.0.10_new.apk";
 
   // Create an anchor element
   const a = document.createElement("a");
   a.href = apkUrl;
-  a.download = "./assets/apk/innpos-version-1.0.10.apk";
+  a.download = "./assets/apk/innpos_version_1.0.10_new.apk";
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
